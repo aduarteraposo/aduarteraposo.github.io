@@ -1,0 +1,109 @@
+/**
+ * ---------------------------------------------------------------------------------------------------- #
+ *
+ * Basic Formattings
+ *
+ */
+
+/**
+ * html, Body
+ */
+
+html {
+    font-size: $default-font-size;
+}
+
+body {
+    font-family: $base-font;
+    font-size: $default-font-size;
+    font-weight: 400;
+    line-height: $default-line-height;
+    text-align: left;
+    color: $black;
+    background-color: $white;
+
+    text-rendering: optimizeLegibility;
+}
+
+/**
+ * General text renderings
+ *
+ */
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+address {
+    font-style: normal;
+}
+
+/**
+ *
+ * Hyperlinks
+ *
+ */
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: 0 none;
+    text-decoration: underline;
+}
+
+/**
+ * Standards & Helpers
+ */
+
+.clearfix {
+    @include clearfix;
+}
+
+.ellipsis {
+    @include ellipsis;
+}
+.hyphens {
+    @include hyphens;
+}
+
+.show {
+    @include show;
+}
+.hide {
+    @include hide;
+}
+
+.visuallyhidden {
+    @include visuallyhidden;
+}
+
+/**
+ * Buttons
+ */
+
+button::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+
+button {
+    overflow: visible;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    display: inline-block;
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    font-family: $base-font;
+    text-transform: none;
+    background-color: transparent;
+}
