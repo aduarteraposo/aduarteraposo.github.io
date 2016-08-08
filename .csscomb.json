@@ -28,6 +28,9 @@
     "vendor-prefix-align": true,
     "sort-order": [
         [
+            "$variable"
+        ],
+        [
             "$include",
             "overflow",
             "-ms-overflow-x",
