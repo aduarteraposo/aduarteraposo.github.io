@@ -42,5 +42,8 @@
     "time-grunt": "0.2.10"
   },
   "name": "nikita_blank",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "foundation-sites": "^6.3.0-rc2"
+  }
 }
