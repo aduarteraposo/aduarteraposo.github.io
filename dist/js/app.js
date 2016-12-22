@@ -1,0 +1,1 @@
+define("app",["logging"],function(a){var b=function(){a.applyLogging(this,"App"),this.initializeEventListeners(),$(document).foundation()};return b.prototype.initializeEventListeners=function(){},new b});
