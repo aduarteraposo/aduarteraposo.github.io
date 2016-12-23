@@ -4314,11 +4314,22 @@ textarea {
     position: absolute;
     bottom: 90px;
     left: 90px; }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .stage .stage-title-container {
+        bottom: 10px;
+        left: 10px; } }
+  @media screen and (min-width: 641px) and (max-width: 1024px) and (orientation: landscape) {
+    .stage .stage-title-container {
+      left: 80px;
+      bottom: 40px; } }
     .stage .stage-title-container .stage-title {
       font-size: 46px;
       color: #fff;
       text-shadow: 0px 0px 10px #db6378;
       font-family: Netto OT Bold, sans-serif; }
+      @media (min-width: 641px) and (max-width: 1024px) {
+        .stage .stage-title-container .stage-title {
+          font-size: 42px; } }
       .stage .stage-title-container .stage-title span:last-child {
         margin-left: 80px; }
 
@@ -4351,15 +4362,29 @@ table.table tr {
   text-transform: uppercase;
   margin-bottom: 60px;
   text-align: center; }
+  @media (max-width: 640px) {
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px; } }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .title {
+      margin-bottom: 40px; } }
 
 .top-bar {
   background-color: #fff; }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .top-bar .top-bar-left {
+      width: 100%;
+      text-align: center; } }
   @media (min-width: 1025px) {
     .top-bar .top-bar-left {
       width: 100%;
       text-align: center; } }
   .top-bar .menu {
     background-color: #fff; }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .top-bar .menu {
+        display: inline-block; } }
     @media (min-width: 1025px) {
       .top-bar .menu {
         display: inline-block; } }
@@ -4368,6 +4393,9 @@ table.table tr {
       .top-bar .menu.vertical > li a {
         color: #000;
         text-transform: uppercase; }
+        @media (min-width: 641px) and (max-width: 1024px) {
+          .top-bar .menu.vertical > li a {
+            font-size: 18px; } }
         @media (min-width: 1025px) {
           .top-bar .menu.vertical > li a {
             font-size: 18px; } }
@@ -4375,8 +4403,8 @@ table.table tr {
 .title-bar {
   background-color: #fff; }
   .title-bar .menu-icon:after {
-    background: #000;
-    box-shadow: 0 7px 0 #000, 0 14px 0 #000; }
+    background: #db6378;
+    box-shadow: 0 7px 0 #db6378, 0 14px 0 #db6378; }
 
 .logo-row {
   background-color: #fff; }
@@ -4403,6 +4431,9 @@ table.table tr {
   .welcome .text {
     position: relative;
     padding: 0 50px; }
+    @media (max-width: 640px) {
+      .welcome .text {
+        padding: 0 20px; } }
     .welcome .text:after {
       content: "W";
       font-weight: 700;
@@ -4412,4 +4443,7 @@ table.table tr {
       top: -100px;
       left: -10px;
       opacity: 0.2; }
+      @media (max-width: 640px) {
+        .welcome .text:after {
+          left: 0; } }
 /*# sourceMappingURL=styles.css.map */

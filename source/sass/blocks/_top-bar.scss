@@ -3,7 +3,7 @@
 
     .top-bar-left {
 
-        @include respond-to(pad,desktop) {
+        @include respond-to(tablet, desktop) {
             width: 100%;
             text-align: center;
         }
@@ -12,7 +12,7 @@
     .menu {
         background-color: $white;
 
-        @include respond-to(pad,desktop) {
+        @include respond-to(tablet,desktop) {
             display: inline-block;
         }
 
@@ -23,7 +23,7 @@
                 color: $black;
                 text-transform: uppercase;
 
-                @include respond-to(pad,desktop) {
+                @include respond-to(tablet,desktop) {
                     font-size: 18px;
                 }
             }
@@ -35,8 +35,8 @@
     background-color: $white;
 
     .menu-icon:after {
-        background: $black;
-        box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+        background: $primary-color;
+        box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
     }
 }
 

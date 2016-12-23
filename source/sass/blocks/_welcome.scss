@@ -6,7 +6,7 @@
         position: relative;
         padding: 0 50px;
 
-        @include respond-to(phone) {
+        @include respond-to(mobile) {
             padding: 0 20px;
         }
 
@@ -20,7 +20,7 @@
             left: -10px;
             opacity: 0.2;
 
-            @include respond-to(phone) {
+            @include respond-to(mobile) {
                 left: 0;
             }
         }

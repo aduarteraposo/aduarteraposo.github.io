@@ -5,8 +5,12 @@
     margin-bottom: 60px;
     text-align: center;
 
-    @include respond-to(phone) {
+    @include respond-to(mobile) {
         font-size: 24px;
         margin-bottom: 20px;
+    }
+
+    @include respond-to(tablet) {
+        margin-bottom: 40px;
     }
 }
