@@ -18,11 +18,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!--[if ! lte IE 9]><!-->
-	<link href="css/styles.css?cb=1482486814368" rel="stylesheet" />
+	<link href="css/styles.css?cb=1482508136382" rel="stylesheet" />
 	<!--<![endif]-->
 
 	<!--[if IE 9]>
-		<link href="css/styles-part1.css?cb=1482486814368" rel="stylesheet" />
+		<link href="css/styles-part1.css?cb=1482508136382" rel="stylesheet" />
 		<![endif]-->
 
 	<!-- Favicon -->
@@ -84,7 +84,6 @@
 		<div class="row column">
 			<div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
 				<button class="menu-icon" type="button" data-toggle></button>
-				<div class="title-bar-title">Menu</div>
 			</div>
 
 			<div class="top-bar" id="menu">
@@ -105,19 +104,20 @@
 		<div class="row column">
 			<section class="stage">
 				<img src="img/bgs/stage-bg.jpg" alt="Fußliebe" class="stage-img">
-				<div class="stage-title-container">
+				<div class="stage-title-container hide-for-small-only">
 					<h2 class="stage-title">
 						<span>Zuhause wohlfühlen</span>
 						<br>
 						<span>mit mobiler Fußpflege</span>
 					</h2>
 				</div>
+				<h2 class="mobile-stage-title show-for-small-only">Zuhause wohlfühlen mit mobiler Fußpflege</h2>
 			</section>
 		</div>
 		<div class="row column">
 			<section class="welcome">
 				<div class="row">
-					<div class="medium-centered medium-8 columns">
+					<div class="small-centered medium-10 large-8 columns">
 						<p class="text">
 							Willkommen bei Fussliebe. Ich kümmere mich um Ihre Füsse und auf Wunsch auch um Ihre Hände. Es fällt Ihnen zunehmend schwerer, das Haus zu verlassen, oder Sie bevorzugen einfach den Komfort, sich zuhause verwöhnen zu lassen? Dann sind Sie bei mir genau
 							richtig, denn ich komme dahin, wo auch immer Ihnen nach einem kleinen Wellness-Moment ist. Ich bin mobil unterwegs – und zwar mit großer Freude und Engagement.
@@ -136,10 +136,10 @@
 				<section class="about-me" id="about-me">
 					<h2 class="title">Über mich</h2>
 					<div class="row">
-						<div class="medium-offset-2 medium-2 columns">
+						<div class="medium-offset-1 large-offset-2 medium-3 large-3 columns">
 							<img src="img/sadeta_kamber.jpg" alt="Sadeta Kamber" class="about-me-img">
 						</div>
-						<div class="medium-6 columns end">
+						<div class="medium-7 large-6 columns end">
 							<p class="text">
 								Mein Name ist Sadeta Kamber und ich arbeite bereits seit vielen Jahren im Bereich der Pflege. Jedoch sind die Pflege der Füsse und Hände mir ein wichtiges Anliegen.
 							</p>
@@ -160,7 +160,7 @@
 			<section class="offers-and-prices" id="offers-and-prices">
 				<h2 class="title">Angebote &amp; Preise</h2>
 				<div class="row">
-					<div class="medium-centered medium-6 columns">
+					<div class="medium-centered medium-8 large-6 columns">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -198,7 +198,7 @@
 			<section class="appointments" id="appointments">
 				<h2 class="title">Terminvereinbarung</h2>
 				<div class="row">
-					<div class="medium-centered medium-6">
+					<div class="medium-centered medium-8 large-6">
 						<table class="table">
 							<tbody>
 								<tr>
@@ -227,16 +227,19 @@
 		<div class="row column">
 			<section class="contact">
 				<div class="row">
-					<div class="medium-centered medium-6 columns text-center">
+					<div class="medium-centered medium-8 large-6 columns text-center">
 						<p class="text">
 							Kontaktieren Sie mich gerne unter der unten genannten Nummer oder benutzen Sie mein Kontaktformular.
 						</p>
 						<a href="mailto:info@fussliebe.com" class="email">info@fussliebe.com</a>
 						<a href="tel:+49 162 1900996" class="telephone">+49 162 1900996</a>
-						<input type="text" placeholder="Vor- und Nachname">
-						<input type="email" placeholder="Email-Adresse">
-						<textarea name="message" id="message" cols="30" rows="10" placeholder="Nachricht"></textarea>
-						<input type="submit" class="button" value="Senden">
+
+						<form action="https://www.enformed.io/k4e2hyms">
+							<input type="text" name="Name" placeholder="Vor- und Nachname">
+							<input type="email" name="Email" placeholder="Email-Adresse">
+							<textarea name="Nachricht" id="message" cols="30" rows="10" placeholder="Nachricht"></textarea>
+							<input type="submit" class="button" value="Senden">
+						</form>
 					</div>
 				</div>
 			</section>
@@ -251,10 +254,10 @@
 				<p class="copyright">2016 (C) by Sadeta Kamber</p>
 				<ul class="inline-list">
 					<li>
-						<a href="/impressum.html" class="footer-link">Impressum</a>
+						<a href="impressum.html" class="footer-link">Impressum</a>
 					</li>
 					<li>
-						<a href="/datenschutz.html" class="footer-link">Datenschutz</a>
+						<a href="datenschutz.html" class="footer-link">Datenschutz</a>
 					</li>
 				</ul>
 			</footer>
