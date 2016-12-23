@@ -4233,12 +4233,20 @@ textarea {
 .about-me {
   background-color: #fff;
   padding: 30px 0 80px; }
+  @media (max-width: 640px) {
+    .about-me {
+      padding: 30px 0; } }
   .about-me .text:first-child {
     margin-bottom: 30px; }
+  .about-me .about-me-img-mobile {
+    margin-bottom: 20px; }
 
 .appointments {
   padding: 30px 0 80px;
   background-color: #fff; }
+  @media (max-width: 640px) {
+    .appointments {
+      padding: 30px 0; } }
   .appointments tr:last-child .description {
     font-weight: 700;
     color: #db6378; }
@@ -4246,6 +4254,9 @@ textarea {
 .contact {
   background-color: #fff;
   padding: 30px 0 80px; }
+  @media (max-width: 640px) {
+    .contact {
+      padding: 30px 0; } }
   .contact .text {
     margin-bottom: 40px; }
   .contact a {
@@ -4254,6 +4265,9 @@ textarea {
     margin-bottom: 10px; }
   .contact .telephone {
     margin-bottom: 40px; }
+  @media (max-width: 640px) {
+    .contact form {
+      padding: 0 15px; } }
 
 .footer {
   background-color: #fff;
@@ -4270,6 +4284,9 @@ textarea {
 .offers-and-prices {
   background-color: #fff;
   padding: 30px 0 80px; }
+  @media (max-width: 640px) {
+    .offers-and-prices {
+      padding: 30px 0; } }
 
 /**
  * Responsive Webdesign Testing
@@ -4307,6 +4324,10 @@ textarea {
     border-width: 7px;
     border-radius: 50px;
     margin: 0 auto; }
+    @media (max-width: 640px) {
+      .separation-line-container .separation-line {
+        border-width: 4px;
+        max-width: 85%; } }
 
 .stage {
   position: relative; }
@@ -4332,6 +4353,13 @@ textarea {
           font-size: 42px; } }
       .stage .stage-title-container .stage-title span:last-child {
         margin-left: 80px; }
+  .stage .mobile-stage-title {
+    font-family: Netto OT Bold, sans-serif;
+    font-size: 30px;
+    background-color: #ffffff;
+    color: #db6378;
+    text-align: center;
+    padding: 15px 15px 10px; }
 
 table.table tbody {
   border: none; }
@@ -4355,6 +4383,9 @@ table.table tr {
 
 .text {
   line-height: 2; }
+  @media (max-width: 640px) {
+    .text {
+      padding: 0 10px; } }
 
 .title {
   font-size: 30px;
@@ -4365,13 +4396,16 @@ table.table tr {
   @media (max-width: 640px) {
     .title {
       font-size: 24px;
-      margin-bottom: 20px; } }
+      margin-bottom: 30px; } }
   @media (min-width: 641px) and (max-width: 1024px) {
     .title {
       margin-bottom: 40px; } }
 
 .top-bar {
   background-color: #fff; }
+  @media (max-width: 640px) {
+    .top-bar {
+      margin-top: -20px; } }
   @media (min-width: 641px) and (max-width: 1024px) {
     .top-bar .top-bar-left {
       width: 100%;
@@ -4389,19 +4423,52 @@ table.table tr {
       .top-bar .menu {
         display: inline-block; } }
     .top-bar .menu.vertical > li {
-      text-align: center; }
+      text-align: center;
+      padding: 0.7rem 1rem; }
       .top-bar .menu.vertical > li a {
+        padding: 0;
         color: #000;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        position: relative; }
         @media (min-width: 641px) and (max-width: 1024px) {
           .top-bar .menu.vertical > li a {
             font-size: 18px; } }
         @media (min-width: 1025px) {
           .top-bar .menu.vertical > li a {
             font-size: 18px; } }
+        @media (min-width: 1025px) {
+          .top-bar .menu.vertical > li a:after {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #db6378;
+            content: '';
+            opacity: 0;
+            transition: height 0.3s, opacity 0.3s, transform 0.3s;
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px); }
+          .top-bar .menu.vertical > li a:hover {
+            color: #d33f59; }
+            .top-bar .menu.vertical > li a:hover:after {
+              height: 2px;
+              opacity: 1;
+              -ms-transform: translateY(0px);
+                  transform: translateY(0px); } }
+        .top-bar .menu.vertical > li a:hover {
+          text-decoration: none; }
 
 .title-bar {
   background-color: #fff; }
+  @media (max-width: 640px) {
+    .title-bar {
+      padding: 0; } }
+  @media (max-width: 640px) {
+    .title-bar .menu-icon {
+      position: absolute;
+      top: 42px;
+      right: 30px; } }
   .title-bar .menu-icon:after {
     background: #db6378;
     box-shadow: 0 7px 0 #db6378, 0 14px 0 #db6378; }
@@ -4412,8 +4479,17 @@ table.table tr {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px; }
+    @media (max-width: 640px) {
+      .logo-row .logo-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left; } }
     .logo-row .logo-container .logo {
       width: 200px; }
+      @media (max-width: 640px) {
+        .logo-row .logo-container .logo {
+          width: 150px;
+          margin-left: 20px; } }
 
 .page-title {
   overflow: hidden;
@@ -4428,6 +4504,9 @@ table.table tr {
 .welcome {
   background-color: #fff;
   padding: 80px 0; }
+  @media (max-width: 640px) {
+    .welcome {
+      padding: 40px 0; } }
   .welcome .text {
     position: relative;
     padding: 0 50px; }
