@@ -4239,7 +4239,8 @@ textarea {
   .about-me .text:first-child {
     margin-bottom: 30px; }
   .about-me .about-me-img-mobile {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 0 50px; }
 
 .appointments {
   padding: 30px 0 80px;
@@ -4468,7 +4469,8 @@ table.table tr {
     .title-bar .menu-icon {
       position: absolute;
       top: 42px;
-      right: 30px; } }
+      right: 30px;
+      outline: 0; } }
   .title-bar .menu-icon:after {
     background: #db6378;
     box-shadow: 0 7px 0 #db6378, 0 14px 0 #db6378; }
