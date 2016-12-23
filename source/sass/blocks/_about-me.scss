@@ -2,7 +2,15 @@
     background-color: $white;
     padding: 30px 0 80px;
 
+    @include respond-to(mobile) {
+        padding: 30px 0;
+    }
+
     .text:first-child {
         margin-bottom: 30px;
+    }
+
+    .about-me-img-mobile {
+        margin-bottom: 20px;
     }
 }

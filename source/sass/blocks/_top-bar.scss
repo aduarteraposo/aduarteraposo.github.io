@@ -1,6 +1,10 @@
 .top-bar {
     background-color: $white;
 
+    @include respond-to(mobile) {
+        margin-top: -20px;
+    }
+
     .top-bar-left {
 
         @include respond-to(tablet, desktop) {
@@ -18,13 +22,53 @@
 
         &.vertical > li{
             text-align: center;
+            padding: 0.7rem 1rem;
 
             a {
+                padding: 0;
                 color: $black;
                 text-transform: uppercase;
+                position: relative;
+
 
                 @include respond-to(tablet,desktop) {
                     font-size: 18px;
+                }
+
+                @include respond-to(desktop) {
+
+                    &:after {
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: $primary-color;
+                        content: '';
+                        opacity: 0;
+                        -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+                        -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+                        transition: height 0.3s, opacity 0.3s, transform 0.3s;
+                        -webkit-transform: translateY(-10px);
+                        -moz-transform: translateY(-10px);
+                        transform: translateY(-10px);
+                    }
+
+                    &:hover {
+                        color: #d33f59;
+
+                        &:after {
+                            height: 2px;
+                            opacity: 1;
+                            -webkit-transform: translateY(0px);
+                            -moz-transform: translateY(0px);
+                            transform: translateY(0px);
+                        }
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
                 }
             }
         }
@@ -34,9 +78,22 @@
 .title-bar {
     background-color: $white;
 
-    .menu-icon:after {
-        background: $primary-color;
-        box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
+    @include respond-to(mobile) {
+        padding: 0;
+    }
+
+    .menu-icon {
+
+        @include respond-to(mobile) {
+            position: absolute;
+            top: 42px;
+            right: 30px;
+        }
+
+        &:after {
+            background: $primary-color;
+            box-shadow: 0 7px 0 $primary-color, 0 14px 0 $primary-color;
+        }
     }
 }
 
@@ -48,8 +105,19 @@
         padding-top: 30px;
         padding-bottom: 30px;
 
+        @include respond-to(mobile) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
         .logo {
             width: 200px;
+
+            @include respond-to(mobile) {
+                width: 150px;
+                margin-left: 20px;
+            }
         }
     }
 }

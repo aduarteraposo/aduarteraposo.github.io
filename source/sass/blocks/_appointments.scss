@@ -2,6 +2,10 @@
     padding: 30px 0 80px;
     background-color: $white;
 
+    @include respond-to(mobile) {
+        padding: 30px 0;
+    }
+
     tr:last-child .description {
         font-weight: 700;
         color: $primary-color;

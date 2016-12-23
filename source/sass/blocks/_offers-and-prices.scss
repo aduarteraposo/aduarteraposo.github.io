@@ -1,4 +1,8 @@
 .offers-and-prices {
     background-color: $white;
     padding: 30px 0 80px;
+
+    @include respond-to(mobile) {
+        padding: 30px 0;
+    }
 }

@@ -2,6 +2,10 @@
     background-color: $white;
     padding: 30px 0 80px;
 
+    @include respond-to(mobile) {
+        padding: 30px 0;
+    }
+
     .text {
         margin-bottom: 40px;
     }
@@ -16,5 +20,12 @@
 
     .telephone {
         margin-bottom: 40px;
+    }
+
+    form {
+
+        @include respond-to(mobile) {
+            padding: 0 15px;
+        }
     }
 }

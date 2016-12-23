@@ -7,5 +7,10 @@
         border-width: 7px;
         border-radius: 50px;
         margin: 0 auto;
+
+        @include respond-to(mobile) {
+            border-width: 4px;
+            max-width: 85%;
+        }
     }
 }
