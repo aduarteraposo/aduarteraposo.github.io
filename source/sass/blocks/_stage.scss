@@ -1,3 +1,21 @@
 .stage {
-    color: green;
+    position: relative;
+
+    .stage-title-container {
+        position: absolute;
+        bottom: 90px;
+        left: 90px;
+
+        .stage-title {
+            font-size: 46px;
+            color: $white;
+            text-shadow: 0px 0px 10px $primary-color;
+            font-family: Netto OT Bold, sans-serif;
+
+            span:last-child {
+                margin-left: 80px;
+            }
+        }
+    }
 }
+

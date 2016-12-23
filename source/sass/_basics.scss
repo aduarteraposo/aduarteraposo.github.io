@@ -20,7 +20,7 @@ body {
     line-height: $default-line-height;
     text-align: left;
     color: $black;
-    background-color: $white;
+    background-color: $body-bg-color;
 
     text-rendering: optimizeLegibility;
 }
@@ -106,4 +106,29 @@ button {
     font-family: $base-font;
     text-transform: none;
     background-color: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 0;
+    box-shadow: none;
+    background-color: $white;
+    border-bottom: 2px solid $medium-gray;
+    border-left: 2px solid $medium-gray;
+    resize: none;
+    padding: 12px;
+    margin-bottom: 30px;
+
+    &:focus {
+        border: 0;
+        box-shadow: 0 0 5px $medium-gray;
+        border-bottom: 2px solid $medium-gray;
+        border-left: 2px solid $medium-gray;
+    }
+}
+
+.button {
+    padding-left: 40px;
+    padding-right: 40px;
 }

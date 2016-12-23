@@ -5,6 +5,7 @@ define('app', ['logging'], function(logging)
 		logging.applyLogging(this, 'App');
 
 		this.initializeEventListeners();
+		$(document).foundation();
 	};
 
 	App.prototype.initializeEventListeners = function()

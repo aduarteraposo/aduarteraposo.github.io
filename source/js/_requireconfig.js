@@ -7,6 +7,10 @@ requirejs({
 	"shim": {
 	},
 	"include": [
-		'app'
+		'app',
+		'jquery.js',
+		'what-input.js',
+		'foundation.js',
+		'foundation.min.js'
 	]
 })

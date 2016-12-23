@@ -1,0 +1,59 @@
+.top-bar {
+    background-color: $white;
+
+    .top-bar-left {
+
+        @include respond-to(pad,desktop) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        background-color: $white;
+
+        @include respond-to(pad,desktop) {
+            display: inline-block;
+        }
+
+        &.vertical > li{
+            text-align: center;
+
+            a {
+                color: $black;
+                text-transform: uppercase;
+
+                @include respond-to(pad,desktop) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.title-bar {
+    background-color: $white;
+
+    .menu-icon:after {
+        background: $black;
+        box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+    }
+}
+
+.logo-row {
+    background-color: $white;
+
+    .logo-container {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .logo {
+            width: 200px;
+        }
+    }
+}
+
+.page-title {
+    @include visuallyhidden();
+}

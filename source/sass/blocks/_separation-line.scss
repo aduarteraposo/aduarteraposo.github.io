@@ -1,0 +1,11 @@
+.separation-line-container {
+    background-color: $white;
+
+    .separation-line {
+        max-width: 80%;
+        border-color: $primary-color;
+        border-width: 7px;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+}

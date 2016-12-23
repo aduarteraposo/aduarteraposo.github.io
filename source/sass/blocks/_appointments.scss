@@ -1,0 +1,9 @@
+.appointments {
+    padding: 30px 0 80px;
+    background-color: $white;
+
+    tr:last-child .description {
+        font-weight: 700;
+        color: $primary-color;
+    }
+}

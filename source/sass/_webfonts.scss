@@ -5,5 +5,9 @@
  *
  */
 
-/* no webfonts included */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+@font-face {
+    font-family: 'Netto Ot Bold';
+    src: url('../fonts/Netto_OT_Bold.ttf') format("truetype");
+}
