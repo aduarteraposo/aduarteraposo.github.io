@@ -119,6 +119,7 @@ textarea {
     resize: none;
     padding: 12px;
     margin-bottom: 30px;
+    min-height: 45px;
 
     &:focus {
         border: 0;

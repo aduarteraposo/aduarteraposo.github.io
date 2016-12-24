@@ -4217,7 +4217,8 @@ textarea {
   border-left: 2px solid #cacaca;
   resize: none;
   padding: 12px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  min-height: 45px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   textarea:focus {
