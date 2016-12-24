@@ -2233,7 +2233,7 @@ select {
   border: 1px solid #e6e6e6;
   border-radius: 0;
   background: #fefefe;
-  box-shadow: none;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   overflow: hidden;
   color: #0a0a0a; }
   .card > :last-child {
@@ -4252,6 +4252,25 @@ textarea {
     font-weight: 700;
     color: #db6378; }
 
+.card .card-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #db6378;
+  margin-bottom: 15px;
+  margin-top: 10px; }
+
+.card .text {
+  color: #db6378;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+.card .footnote {
+  margin-bottom: 15px; }
+  .card .footnote .logo-text {
+    font-family: Netto OT Bold;
+    color: #db6378;
+    font-size: 20px; }
+
 .contact {
   background-color: #fff;
   padding: 30px 0 80px; }
@@ -4282,12 +4301,32 @@ textarea {
     .footer .inline-list li:last-child {
       margin-left: 5px; }
 
+.imprint-container {
+  background-color: #fff;
+  padding: 0 0 30px 50px; }
+  .imprint-container .imprint h2 {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .imprint-container .imprint h3 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .imprint-container .imprint p {
+    margin-bottom: 20px; }
+
 .offers-and-prices {
   background-color: #fff;
   padding: 30px 0 80px; }
   @media (max-width: 640px) {
     .offers-and-prices {
       padding: 30px 0; } }
+
+.privacy-container {
+  background-color: #fff; }
+  .privacy-container .privacy h2 {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .privacy-container .privacy p {
+    margin-bottom: 20px; }
 
 /**
  * Responsive Webdesign Testing
@@ -4361,6 +4400,15 @@ textarea {
     color: #db6378;
     text-align: center;
     padding: 15px 15px 10px; }
+
+.success {
+  padding: 80px 0; }
+  .success .button {
+    margin: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .success .button:hover {
+      box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      text-decoration: none; }
 
 table.table tbody {
   border: none; }
@@ -4444,6 +4492,7 @@ table.table tr {
             left: 0;
             width: 100%;
             height: 1px;
+            border-radius: 50px;
             background: #db6378;
             content: '';
             opacity: 0;
