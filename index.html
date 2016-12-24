@@ -10,7 +10,7 @@
 
 	<title>Fußliebe</title>
 
-	<meta name="description" content="This is the startpage of your prototype. Provide an overview of all pages built in this project." />
+	<meta name="description" content="Zuhause wohlfühlen mit mobiler Fußpflege" />
 	<meta name="keywords" content="" />
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -18,11 +18,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!--[if ! lte IE 9]><!-->
-	<link href="css/styles.css?cb=1482516322215" rel="stylesheet" />
+	<link href="css/styles.css?cb=1482540010586" rel="stylesheet" />
 	<!--<![endif]-->
 
 	<!--[if IE 9]>
-		<link href="css/styles-part1.css?cb=1482516322215" rel="stylesheet" />
+		<link href="css/styles-part1.css?cb=1482540010586" rel="stylesheet" />
 		<![endif]-->
 
 	<!-- Favicon -->
@@ -68,8 +68,10 @@
 			<div class="row logo-row collapse">
 				<div class="medium-centered medium-4 columns logo-container">
 					<h1>
-						<img src="img/logo.svg" alt="Fußliebe" class="logo">
-						<span class="page-title">Fußliebe</span>
+						<a href="index.html">
+							<img src="img/logo.svg" alt="Fußliebe" class="logo">
+							<span class="page-title">Fußliebe</span>
+						</a>
 					</h1>
 				</div>
 			</div>
@@ -240,6 +242,9 @@
 							<input type="email" name="Email" placeholder="Email-Adresse">
 							<textarea name="Nachricht" id="message" cols="30" rows="10" placeholder="Nachricht"></textarea>
 							<input type="submit" class="button" value="Senden">
+
+							<input type="hidden" name="*redirect" value="https://fußliebe.com/success.html" />
+							<!--<input type="hidden" name="*default_email" value="info@fußliebe.com" />-->
 						</form>
 					</div>
 				</div>
