@@ -4237,8 +4237,16 @@ textarea {
   @media (max-width: 640px) {
     .about-me {
       padding: 30px 0; } }
-  .about-me .text:first-child {
-    margin-bottom: 30px; }
+  .about-me .text {
+    margin-bottom: 24px; }
+    @media (min-width: 1025px) {
+      .about-me .text:first-child {
+        margin-top: -10px; } }
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .about-me .text:first-child {
+        margin-top: -10px; } }
+    .about-me .text:last-child {
+      margin-bottom: 0; }
   .about-me .about-me-img-mobile {
     margin-bottom: 20px;
     padding: 0 50px; }
@@ -4436,7 +4444,7 @@ table.table tr {
   line-height: 2; }
   @media (max-width: 640px) {
     .text {
-      padding: 0 10px; } }
+      padding: 0 15px; } }
 
 .title {
   font-size: 30px;
