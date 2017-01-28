@@ -4281,6 +4281,7 @@ textarea {
   .contact .text {
     margin-bottom: 40px; }
   .contact a {
+    font-size: 18px;
     display: block; }
   .contact .email {
     margin-bottom: 10px; }
