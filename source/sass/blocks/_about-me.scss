@@ -6,8 +6,19 @@
         padding: 30px 0;
     }
 
-    .text:first-child {
-        margin-bottom: 30px;
+    .text {
+        margin-bottom: 24px;
+
+        @include respond-to(desktop,tablet) {
+
+            &:first-child {
+                margin-top: -10px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .about-me-img-mobile {
