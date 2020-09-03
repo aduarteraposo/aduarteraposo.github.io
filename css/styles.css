@@ -6518,7 +6518,7 @@ textarea {
     padding: 0 50px; }
 
 .appointments {
-  padding: 30px 0 80px;
+  padding: 30px 0 50px;
   background-color: #fff; }
   @media (max-width: 640px) {
     .appointments {
